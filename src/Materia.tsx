@@ -1,4 +1,4 @@
-import "./css/Materia.css";
+import "./Materia.css";
 
 interface MateriaProps {
     disciplina:string;
