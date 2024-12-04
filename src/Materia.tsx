@@ -17,19 +17,20 @@ export default function Materia({
     inicio,
     fim
 }: MateriaProps) {
-    return <div className="materia">
-        <div className="disciplina">{disciplina.toUpperCase()}</div>
-        <div className="nome">{nome}</div>
-        <div className="turma">{turma.toUpperCase()}</div>
-        {dia != "0" ?
-            (<>
-                <div className="dia">{dia}</div>
-                <div className="inicio">{inicio?.toLocaleString()}</div>
-                <div className="fim">{fim?.toLocaleString()}</div>
-            </>)
-            :
-            <div></div>
-        }
-        
-    </div>
+    return (
+        <tr>
+            <td className="disciplina">{disciplina.toUpperCase()}</td>
+            <td className="nome">{nome}</td>
+            <td className="turma">{turma.toUpperCase()}</td>
+            {dia != "0" ?
+                (<>
+                    <td className="dia">{dia}</td>
+                    <td className="inicio">{inicio?.toLocaleString()}</td>
+                    <td className="fim">{fim?.toLocaleString()}</td>
+                </>)
+                :
+                <div></div>
+            }
+            </tr>
+    )
 }
