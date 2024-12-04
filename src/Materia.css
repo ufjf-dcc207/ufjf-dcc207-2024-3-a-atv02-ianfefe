@@ -1,0 +1,7 @@
+.materia {
+    display: grid;
+    grid-template: 'disciplina nome turma dia inicio fim';
+    border: 1px solid grey;
+    padding: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
