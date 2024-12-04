@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import './Grade.css'
+import './css/Grade.css'
 
 interface GradeProps {
     children?: ReactNode

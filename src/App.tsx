@@ -1,4 +1,4 @@
-import './App.css'
+import './css/App.css'
 import Grade from './Grade.tsx'
 import Materia from './Materia.tsx'
 
