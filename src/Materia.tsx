@@ -5,8 +5,8 @@ interface MateriaProps {
     nome: string;
     turma: string;
     dia?: string;
-    inicio?: Date;
-    fim?: Date;
+    inicio?: string;
+    fim?: string;
 }
 
 export default function Materia({
@@ -25,8 +25,8 @@ export default function Materia({
             {dia != "0" ?
                 (<>
                     <td className="dia">{dia}</td>
-                    <td className="inicio">{inicio?.toLocaleString()}</td>
-                    <td className="fim">{fim?.toLocaleString()}</td>
+                    <td className="inicio">{inicio}</td>
+                    <td className="fim">{fim}</td>
                 </>)
                 :
                 <div></div>
